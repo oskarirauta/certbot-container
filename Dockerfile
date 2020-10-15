@@ -3,7 +3,7 @@ FROM alpine:latest
 RUN \
      apk --no-cache update && \
      apk --no-cache upgrade && \
-     apk --no-cache add certbot
+     apk --no-cache add certbot curl grep
         
 RUN \
      mkdir -p /etc/letsencrypt /var/log/letsencrypt && \

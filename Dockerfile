@@ -14,6 +14,7 @@ RUN rm -f /var/cache/apk/*
 
 ADD entrypoint.sh /scripts/entrypoint.sh
 ADD certbot-he-hook.sh /scripts/certbot/certbot-he-hook.sh
+COPY root /etc/crontabs/root
 
 VOLUME ["/etc/letsencrypt"]
 VOLUME ["/scripts/entrypoint.d"]

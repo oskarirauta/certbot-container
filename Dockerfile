@@ -19,4 +19,4 @@ ADD entrypoint.sh /scripts/entrypoint.sh
 VOLUME ["/scripts/entrypoint.d"]
 
 ENTRYPOINT ["/scripts/entrypoint.sh"]
-CMD ["/usr/sbin/crond", "-d", "8"]
+CMD ["/usr/sbin/crond", "-f", "-d", "8"]

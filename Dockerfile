@@ -6,7 +6,7 @@ RUN \
      apk --no-cache add certbot
         
 RUN \
-     mkdir -p /etc/letsencrypt && \
+     mkdir -p /etc/letsencrypt /var/log/letsencrypt && \
      mkdir -p /scripts /scripts/entrypoint.d /scripts/certbot && \
      touch /scripts/certbot/renew.sh
 

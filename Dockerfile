@@ -7,7 +7,7 @@ FROM alpine:latest
 RUN \
      apk --no-cache update && \
      apk --no-cache upgrade && \
-     apk --no-cache add certbot curl pwgen
+     apk --no-cache add certbot
         
 RUN \
         mkdir -p /scripts /scripts/entrypoint.d

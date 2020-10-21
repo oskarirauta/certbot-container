@@ -3,7 +3,7 @@ FROM alpine:latest
 RUN \
      apk --no-cache update && \
      apk --no-cache upgrade && \
-     apk --no-cache add --update certbot curl grep busybox-suid
+     apk --no-cache add --update certbot curl grep sudo busybox-suid
         
 RUN \
      mkdir -p /etc/letsencrypt /var/log/letsencrypt && \
